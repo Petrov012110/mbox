@@ -1,0 +1,27 @@
+table{
+    font-family:  "Montserrat", sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-page-content);
+    tr{
+        border-bottom: 1px solid var(--color-line);
+        transition: background-color .3s ease-in-out;
+        padding: 12px 32px;
+        padding: 12px calc(var(--page-content-horizontal-gutter) - 24px / 2);
+    }
+    & th,
+    & td {
+      padding: 1rem;
+      text-align: left;
+    }
+    & th {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: #fbfcfc;
+        border-top: 1px solid var(--color-line);
+        border-bottom: 1px solid var(--color-line);
+        min-height: 40px;
+        align-items: center;
+      }
+
+}

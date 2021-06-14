@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Автор</th>
+            <th>Текст</th>
+            <th>Дата</th>
+            <th>Действие</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let m of mails; let idx = index">
+            <td>{{idx + 1}}</td>
+            <td>{{m.author}}</td>
+            <td>{{m.text}}</td>
+            <td>{{m.date}}</td>
+            <td>Delete</td>
+        </tr>
+    </tbody>
+</table>
