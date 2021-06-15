@@ -13,8 +13,12 @@
             <td>{{idx + 1}}</td>
             <td>{{m.author}}</td>
             <td>{{m.text}}</td>
-            <td>{{m.date}}</td>
-            <td>Delete</td>
+            <td>{{m.date | date: 'MMM d, y, h:mm:ss a'}}</td>
+            <td>
+                <button (click)="removeMail(idx)">
+                    Delete
+                </button>
+            </td>
         </tr>
     </tbody>
 </table>
